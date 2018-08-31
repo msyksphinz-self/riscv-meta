@@ -108,6 +108,7 @@ hret
 mret
 dret
 sfence.vm
+sfence.vma
 wfi
 rdcycle
 rdtime

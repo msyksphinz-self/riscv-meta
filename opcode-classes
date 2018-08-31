@@ -108,6 +108,7 @@ hret       system
 mret       system
 dret       system
 sfence.vm  system
+sfence.vma system
 wfi        system
 rdcycle    csr
 rdtime     csr
