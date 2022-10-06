@@ -38,3 +38,7 @@ rd,rs1
 rd,rs2
 rs1,offset
 rs2,offset
+
+# Vector
+vd,rs1
+vs3,rs1

@@ -25,3 +25,4 @@ rv 128 q 32 "RV128Q Standard Extension for Quadruple-Precision Floating-Point (i
 rv 32  c 16 "RV32C Standard Extension for Compressed Instructions"
 rv 64  c 16 "RV64C Standard Extension for Compressed Instructions (in addition to RV32C)"
 rv 128 c 16 "RV128C Standard Extension for Compressed Instructions (in addition to RV64C)"
+rv 64  v 32 "RISC-V Vector Instructions"

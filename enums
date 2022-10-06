@@ -10,6 +10,7 @@ type    freg                 4       "Floating Point Register"                  
 type    offset               5       "Signed Offset"                                      1.7-
 type    simm                 6       "Sign Extended Immediate"                            1.7-
 type    uimm                 7       "Zero Extended Immediate"                            1.7-
+type    vreg                 8       "Vector Register"                                    1.7-
 
 # Round Mode
 rm      rne                  0b000   "Round to Nearest, ties to Even"                     1.7-

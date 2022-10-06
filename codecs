@@ -1,9 +1,9 @@
 # format of a line in this file:
 # <codec> <format> [<arg> ... ]
-# 
+#
 # <codec> denotes a distinct instruction type, subtype and format
 #
-# [<arg> ... ] lists operands declared in opcodes as a cross-check 
+# [<arg> ... ] lists operands declared in opcodes as a cross-check
 #
 # Codecs with a · sign denote a subtype of the higher level type
 # Codecs with a + sign denote a format variant for the same type
@@ -79,3 +79,5 @@ css·sdsp   rs2,offset(rs1)        crs2 cimmsdsp
 css·sqsp   rs2,offset(rs1)        crs2 cimmsqsp
 css·swsp+f frs2,offset(rs1)       cfrs2 cimmswsp
 css·sdsp+f frs2,offset(rs1)       cfrs2 cimmsdsp
+i+v        vd,rs1                 vd rs1
+s+v        vs3,rs1                vs3 rs1
