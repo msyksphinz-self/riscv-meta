@@ -81,3 +81,5 @@ css·swsp+f frs2,offset(rs1)       cfrs2 cimmswsp
 css·sdsp+f frs2,offset(rs1)       cfrs2 cimmsdsp
 i+v        vd,rs1                 vd rs1
 s+v        vs3,rs1                vs3 rs1
+i+x        vd,rs1,rs2             vd rs1 rs2
+s+x        vs3,rs1,rs2            vs3 rs1 rs2

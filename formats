@@ -42,3 +42,5 @@ rs2,offset
 # Vector
 vd,rs1
 vs3,rs1
+vd,rs1,rs2
+vs3,rs1,rs2
