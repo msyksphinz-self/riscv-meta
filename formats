@@ -44,6 +44,8 @@ vd,rs1
 vs3,rs1
 vd,rs1,rs2
 vs3,rs1,rs2
+vd,rs1,vs2
+vs3,rs1,vs2
 vd,vs2,vs1
 vd,vs2,rs1
 vd,vs2,simm5
