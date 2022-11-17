@@ -79,14 +79,16 @@ css·sdsp   rs2,offset(rs1)        crs2 cimmsdsp
 css·sqsp   rs2,offset(rs1)        crs2 cimmsqsp
 css·swsp+f frs2,offset(rs1)       cfrs2 cimmswsp
 css·sdsp+f frs2,offset(rs1)       cfrs2 cimmsdsp
-i+lv       vd,rs1                 vd rs1
-s+v        vs3,rs1                vs3 rs1
-i+vs       vd,rs1,rs2             vd rs1 rs2
-s+vs       vs3,rs1,rs2            vs3 rs1 rs2
-i+vsv      vd,rs1,vs2             vd rs1 vs2
-s+vsv      vs3,rs1,vs2            vs3 rs1 vs2
-i+vv       vd,vs2,vs1             vd vs2 vs1
-i+vr       vd,vs2,rs1             vd vs2 rs1
-i+vi       vd,vs2,simm5           vd vs2 simm5
-i+v        vd,vs2                 vd vs2
+i·lv       vd,(rs1)               vd rs1
+s·v        vs3,(rs1)              vs3 rs1
+i·vs       vd,rs1,rs2             vd rs1 rs2
+s·vs       vs3,rs1,rs2            vs3 rs1 rs2
+i·vsv      vd,rs1,vs2             vd rs1 vs2
+s·vsv      vs3,rs1,vs2            vs3 rs1 vs2
+i·vv       vd,vs2,vs1             vd vs2 vs1
+i·vr       vd,vs2,rs1             vd vs2 rs1
+i·vf       vd,vs2,frs1            vd vs2 frs1
+i·vff      vd,vs2,frs1            vd vs2 frs1
+i·vi       vd,vs2,simm5           vd vs2 simm5
+i·v        vd,vs2                 vd vs2
 i+ii       rd,imm12,oimm12        rd imm12 oimm12
