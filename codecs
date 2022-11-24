@@ -88,7 +88,7 @@ s·vsv      vs3,rs1,vs2            vs3 rs1 vs2
 i·vv       vd,vs2,vs1             vd vs2 vs1
 i·vr       vd,vs2,rs1             vd vs2 rs1
 i·vf       vd,vs2,frs1            vd vs2 frs1
-i·vff      vd,vs2,frs1            vd vs2 frs1
+i·vvf      vd,vs2,frs1            vd vs2 frs1
 i·vi       vd,vs2,simm5           vd vs2 simm5
 i·v        vd,vs2                 vd vs2
 i+ii       rd,imm12,oimm12        rd imm12 oimm12
