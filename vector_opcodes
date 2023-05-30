@@ -84,14 +84,14 @@ vsuxei32.v   vs3 rs1 vs2         31..29=0 28..28=0 27..26=1          14..12=6 6.
 vluxei64.v   vd rs1 vs2          31..29=0 28..28=0 27..26=1          14..12=7 6..2=1 1..0=3 i·vsv rv64v
 vsuxei64.v   vs3 rs1 vs2         31..29=0 28..28=0 27..26=1          14..12=7 6..2=9 1..0=3 s·vsv rv64v
 
-vloxei8.v    vd rs1 vs2          31..29=0 28..28=0 27..26=1          14..12=0 6..2=1 1..0=3 i·vsv rv64v
-vsoxei8.v    vs3 rs1 vs2         31..29=0 28..28=0 27..26=1          14..12=0 6..2=9 1..0=3 s·vsv rv64v
-vloxei16.v   vd rs1 vs2          31..29=0 28..28=0 27..26=1          14..12=5 6..2=1 1..0=3 i·vsv rv64v
-vsoxei16.v   vs3 rs1 vs2         31..29=0 28..28=0 27..26=1          14..12=5 6..2=9 1..0=3 s·vsv rv64v
-vloxei32.v   vd rs1 vs2          31..29=0 28..28=0 27..26=1          14..12=6 6..2=1 1..0=3 i·vsv rv64v
-vsoxei32.v   vs3 rs1 vs2         31..29=0 28..28=0 27..26=1          14..12=6 6..2=9 1..0=3 s·vsv rv64v
-vloxei64.v   vd rs1 vs2          31..29=0 28..28=0 27..26=1          14..12=7 6..2=1 1..0=3 i·vsv rv64v
-vsoxei64.v   vs3 rs1 vs2         31..29=0 28..28=0 27..26=1          14..12=7 6..2=9 1..0=3 s·vsv rv64v
+vloxei8.v    vd rs1 vs2          31..29=0 28..28=0 27..26=3          14..12=0 6..2=1 1..0=3 i·vsv rv64v
+vsoxei8.v    vs3 rs1 vs2         31..29=0 28..28=0 27..26=3          14..12=0 6..2=9 1..0=3 s·vsv rv64v
+vloxei16.v   vd rs1 vs2          31..29=0 28..28=0 27..26=3          14..12=5 6..2=1 1..0=3 i·vsv rv64v
+vsoxei16.v   vs3 rs1 vs2         31..29=0 28..28=0 27..26=3          14..12=5 6..2=9 1..0=3 s·vsv rv64v
+vloxei32.v   vd rs1 vs2          31..29=0 28..28=0 27..26=3          14..12=6 6..2=1 1..0=3 i·vsv rv64v
+vsoxei32.v   vs3 rs1 vs2         31..29=0 28..28=0 27..26=3          14..12=6 6..2=9 1..0=3 s·vsv rv64v
+vloxei64.v   vd rs1 vs2          31..29=0 28..28=0 27..26=3          14..12=7 6..2=1 1..0=3 i·vsv rv64v
+vsoxei64.v   vs3 rs1 vs2         31..29=0 28..28=0 27..26=3          14..12=7 6..2=9 1..0=3 s·vsv rv64v
 
 ### Segment
 
@@ -615,7 +615,7 @@ vmfle.vx        vd vs2 frs1	   31..26=25 14..12=1 6..2=21  1..0=3 i·vf rv64v
 vmflt.vx        vd vs2 frs1	   31..26=27 14..12=1 6..2=21  1..0=3 i·vf rv64v
 vmfne.vx        vd vs2 frs1	   31..26=28 14..12=1 6..2=21  1..0=3 i·vf rv64v
 
-vfdiv.vx        vd vs2 frs1	   31..26=32 14..12=1 6..2=21  1..0=3 i·vf rv64v
+vfdiv.vv        vd vs2 vs1	   31..26=32 14..12=1 6..2=21  1..0=3 i·vv rv64v
 
 vfcvt.xu.f.v     vd vs2 	   31..26=18 19..15=0 14..12=1  6..2=21  1..0=3 i·v rv64v
 vfcvt.x.f.v      vd vs2 	   31..26=18 19..15=1 14..12=1  6..2=21  1..0=3 i·v rv64v
@@ -642,7 +642,6 @@ vfncvt.rtz.xu.f.w vd vs2 	   31..26=18 19..15=22 14..12=1 6..2=21  1..0=3 i·v r
 vfncvt.rtz.x.f.w  vd vs2 	   31..26=18 19..15=23 14..12=1 6..2=21  1..0=3 i·v rv64v
 
 vfmul.vv        vd vs2 vs1	    31..26=36 14..12=1 6..2=21  1..0=3 i·vv rv64v
-vfrsub.vv       vd vs2 vs1	    31..26=39 14..12=1 6..2=21  1..0=3 i·vv rv64v
 vfmadd.vv       vd vs2 vs1 vs3	31..26=40 14..12=1 6..2=21  1..0=3 i·vvv rv64v
 vfnmadd.vv      vd vs2 vs1 vs3	31..26=41 14..12=1 6..2=21  1..0=3 i·vvv rv64v
 vfmsub.vv       vd vs2 vs1 vs3	31..26=42 14..12=1 6..2=21  1..0=3 i·vvv rv64v
@@ -693,7 +692,7 @@ vmfge.vf        vd vs2 frs1	   31..26=31 14..12=5 6..2=21  1..0=3 i·vf rv64v
 vfdiv.vf        vd vs2 frs1	   31..26=32 14..12=5 6..2=21  1..0=3 i·vf  rv64v
 vfrdiv.vf       vd vs2 frs1	   31..26=33 14..12=5 6..2=21  1..0=3 i·vf  rv64v
 vfmul.vf        vd vs2 frs1	   31..26=36 14..12=5 6..2=21  1..0=3 i·vf  rv64v
-vfrsub.vf       vd vs2 frs1	   31..26=37 14..12=5 6..2=21  1..0=3 i·vf  rv64v
+vfrsub.vf       vd vs2 frs1	   31..26=39 14..12=5 6..2=21  1..0=3 i·vf  rv64v
 vfmadd.vf       vd vs2 frs1	vs3  31..26=40 14..12=5 6..2=21  1..0=3 i·vvf rv64v
 vfnmadd.vf      vd vs2 frs1	vs3  31..26=41 14..12=5 6..2=21  1..0=3 i·vvf rv64v
 vfmsub.vf       vd vs2 frs1	vs3  31..26=42 14..12=5 6..2=21  1..0=3 i·vvf rv64v
