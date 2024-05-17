@@ -51,6 +51,7 @@ vd,vs2,vs1
 vd,vs2,vs1,vd
 vd,vs2,vs1,v0
 vd,vs2,rs1
+rd,vs2
 vd,vs2,rs1,v0
 vd,vs2,frs1
 vd,vs2,simm5
