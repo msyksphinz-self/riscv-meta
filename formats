@@ -47,6 +47,8 @@ vd,rs1,rs2
 vs3,rs1,rs2
 vd,rs1,vs2
 vs3,rs1,vs2
+vd,rs1,vs2,v0t
+vs3,rs1,vs2,v0t
 vd,vs2,vs1
 vd,vs2,vs1,vd
 vd,vs2,vs1,v0
@@ -58,3 +60,4 @@ vd,vs2,simm5
 vd,vs2
 rd,imm12,oimm12
 frd,vs2
+vd,simm5

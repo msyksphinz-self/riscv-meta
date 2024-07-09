@@ -77,3 +77,4 @@ vs1        19:15                        vreg    vs1       white   magenta
 vs2        24:20                        vreg    vs2       white   magenta
 vs3        11:7                         vreg    vs3       white   magenta
 simm5      19:15                        simm    simm      green   none
+v0t        24:24                        vreg    v0.t      green   none
