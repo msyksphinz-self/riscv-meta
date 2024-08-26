@@ -90,14 +90,17 @@ s·vsvm     vs3,rs1,vs2,v0t        vs3 rs1 vs2 v0t
 i·vv       vd,vs2,vs1             vd vs2 vs1
 i·vvv      vd,vs2,vs1,vd          vd vs2 vs1 vs3
 i·vr       vd,vs2,rs1             vd vs2 rs1
+i·vrm      vd,vs2,rs1,v0t         vd vs2 rs1 v0t
 i·iv       rd,vs2                 rd vs2
 i·vf       vd,vs2,frs1            vd vs2 frs1
 i·vvf      vd,vs2,frs1            vd vs2 frs1 vs3
 i·vi       vd,vs2,simm5           vd vs2 simm5
+i·vim      vd,vs2,simm5,v0t       vd vs2 simm5 v0t
 i·vii      vd,simm5               vd simm5
 i·v        vd,vs2                 vd vs2
 i·vr1      vd,rs1                 vd rs1
 i·frv      frd,vs2                frd vs2
 i·vv0      vd,vs2,vs1,v0          vd vs2 vs1 vs3
+i·vvm      vd,vs2,vs1,v0t         vd vs2 vs1 v0t
 i·vr0      vd,vs2,rs1,v0          vd vs2 rs1 vs3
 i+ii       rd,imm12,oimm12        rd imm12 oimm12

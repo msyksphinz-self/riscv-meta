@@ -52,10 +52,13 @@ vs3,rs1,vs2,v0t
 vd,vs2,vs1
 vd,vs2,vs1,vd
 vd,vs2,vs1,v0
+vd,vs2,vs1,v0t
 vd,vs2,rs1
 rd,vs2
 vd,vs2,rs1,v0
+vd,vs2,rs1,v0t
 vd,vs2,frs1
+vd,vs2,simm5,v0t
 vd,vs2,simm5
 vd,vs2
 rd,imm12,oimm12
